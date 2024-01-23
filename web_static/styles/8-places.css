@@ -32,3 +32,10 @@
     display: inline-block;
     width: 100px;
 }
+
+.info_icon {
+    background-image: url("../images/icon_group.png");
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+}
