@@ -1,0 +1,26 @@
+.places {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Name {
+    font-size: 30px;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    margin-right: 900px;
+}
+
+article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+}
+
+#placeName {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}

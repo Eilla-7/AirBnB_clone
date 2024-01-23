@@ -1,0 +1,28 @@
+.locations , .amenities {
+    height: 100%;
+    width: 25%;
+}
+
+.locations {
+    border-right: 1px solid #DDDDDD;
+}
+
+/*lets search button on right*/
+.amenities {
+    margin-right: auto;
+}
+
+h3 {
+    line-height: 10px;
+    text-align: justify;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+h4 {
+    line-height: 5px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 20px;
+}
