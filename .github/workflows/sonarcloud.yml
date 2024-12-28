@@ -1,0 +1,28 @@
+name: SonarCloud Analysis
+
+on:
+  push:
+    branches:
+      - main # or any branch you want to trigger the analysis
+
+jobs:
+  sonarcloud:
+    name: Analyze with SonarCloud
+    runs-on: ubuntu-latest # Or choose another OS if you prefer
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # Checkout your code
+
+      - name: Set up SonarCloud
+        uses: sonarsource/sonarcloud-github-action@v1 # Set up the SonarCloud GitHub Action
+
+      - name: Run SonarCloud Scanner
+        run: |
+          sonar-scanner \
+            -Dsonar.organization=eilla-7 \
+            -Dsonar.projectKey=airBnB_clone \
+            -Dsonar.projectName=AirBnB_clone \
+            -Dsonar.sources=.  # Scan all source files in the repository
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # The token will be added in the next steps
