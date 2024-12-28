@@ -21,7 +21,7 @@ jobs:
         run: |
           sonar-scanner \
             -Dsonar.organization=eilla-7 \
-            -Dsonar.projectKey=airBnB_clone \
+            -Dsonar.projectKey=AirBnB_clone \
             -Dsonar.projectName=AirBnB_clone \
             -Dsonar.sources=.  # Scan all source files in the repository
         env:
